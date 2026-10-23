@@ -1,0 +1,56 @@
+{
+  "name": "anki-card-maker",
+  "version": "0.1.0",
+  "license": "AGPL-3.0-or-later",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3100",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "desktop:build": "node scripts/build-desktop.mjs",
+    "desktop:dev": "electron .",
+    "addon:build": "node scripts/build-addon.mjs"
+  },
+  "main": "desktop/main.cjs",
+  "description": "Turns lecture PDFs and CSBL cases into Anki cloze cards",
+  "author": "Wormybean",
+  "build": {
+    "appId": "app.cardmaker.desktop",
+    "productName": "Next-gen Card Creator",
+    "directories": { "output": "dist-desktop" },
+    "files": ["desktop/**", "!node_modules/**"],
+    "extraResources": [
+      { "from": ".next/standalone", "to": "server" },
+      { "from": ".next/standalone/node_modules", "to": "server/node_modules" }
+    ],
+    "win": { "target": "nsis" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true },
+    "mac": { "target": "dmg", "category": "public.app-category.education" },
+    "linux": { "target": "AppImage" }
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "@vercel/blob": "^2.8.1",
+    "jszip": "^3.10.2",
+    "mupdf": "^1.28.1",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "electron": "^44.7.2",
+    "electron-builder": "^26.15.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.2"
+  }
+}

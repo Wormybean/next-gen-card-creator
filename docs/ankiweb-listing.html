@@ -1,0 +1,101 @@
+<!--
+  Text for the add-on's AnkiWeb page (https://ankiweb.net/shared/addons → upload).
+  Title: Next-gen Card Creator: lecture slides to cloze cards
+  Supported Anki versions: 26.9 and newer (the only ones tested).
+  Support page: https://github.com/Wormybean/next-gen-card-creator/issues
+  Paste everything below this comment into the description box; AnkiWeb takes basic HTML.
+  The pictures are docs/listing/*.webp, served from the public GitHub repo, so mirror the repo
+  before saving. Check the preview before saving.
+  The screenshots show a CC BY-SA lecture from Open.Michigan, never the author's own course
+  slides; keep the credit at the end while they do. Balances and the key ending in them are
+  placeholders.
+-->
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/hero.webp" alt="Next-gen Card Creator: lecture slides in, reviewed cloze cards out">
+
+<b>Turn lecture slides into reviewed, high-yield cloze cards, without leaving Anki.</b>
+
+Hi! I'm a medical student with a 600+ day Anki streak, and I made this to save time creating Anki flashcards. I tried Anki-MCP, but I thought the process could be simpler and more streamlined, and that you should be able to edit the cards the AI writes before they go into your decks (because we all know AI isn't perfect).
+
+The add-on itself is free. It writes cards with AI through <i>your own</i> OpenRouter account: you add a little credit and paste in a key once (the window shows you how, step by step, with pictures). The AI costs about 2–3 US cents a lecture. See <b>Paying for the AI</b> below.
+
+<b>How it works</b>
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/how-it-works.webp" alt="Choose a lecture PDF, press Make cards, check the cards next to their slides, add them to your deck, then study them in Anki">
+
+Card Creator is in its first version, but here are its best features:
+
+<b>1. High-yield cards from your lecture slides</b>
+<ul>
+<li><b>Content filtering:</b> the AI reads every slide and keeps what the lecture stresses, so you get high-yield cards, not one card per bullet point.</li>
+<li><b>Slides on the back:</b> each cloze card has its lecture slide on the back automatically. Crop just the part you want, or paste your own picture.</li>
+<li><b>Live progress:</b> while the cards are written you can see what the AI is doing. Minimise the window and keep using Anki in the meantime.</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/high-yield.webp" alt="The progress panel while the AI writes, and a troponin card with its slide on the back">
+
+<b>2. Edit and preview every card</b>
+<ul>
+<li><b>See it as Anki will:</b> each card's front is shown exactly as it will look in your reviews.</li>
+<li><b>Add and remove cloze:</b> highlight words and choose <i>Blank</i> or <i>Same number</i>. Click a blank to change its number or remove it. Anki's own shortcuts work too.</li>
+<li><b>Untick</b> any card you don't want; nothing is added until you say so.</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/edit.webp" alt="Highlighting words on a card front, with the Blank, Same number and Define toolbar">
+
+<b>3. Straight into new or existing decks</b>
+No more uploading your slides to an AI chat and then copying and pasting each card into Anki one by one (that is what I used to do). The cards the add-on writes go straight into your deck:
+<ul>
+<li>Cards go directly into the deck you pick, new or existing, with their tags and slides, so there's no importing or moving cards afterwards.</li>
+<li>Adding the same lecture again updates its cards instead of making copies, and one <i>Undo</i> takes a whole batch back.</li>
+<li>Open it from <b>Card Creator</b> in Anki's top bar, or <b>Tools → Next-gen Card Creator</b>.</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/add.webp" alt="Added 27 cards to Medicine::Cardiology, and one of them in Anki's reviewer with its slide on the back">
+
+<b>4. Define terms with AI</b>
+One of the worst feelings is looking at an Anki card, finding a term you have no recollection of, and then having to search for it on Google and add it to the card yourself. Not anymore:
+<ul>
+<li>Highlight a term and press <i>Define</i>. The AI writes a short definition for the way your slide uses it, and it appears on the back of the card as a card extra.</li>
+<li>Edit or remove a definition with one click.</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/define.webp" alt="A definition of pleuritic chest pain on the back of a pericarditis card">
+
+<b>5. Combine related cards</b>
+<ul>
+<li>Mark related cards with <i>Combine…</i> and merge them into a single card, reducing your total number of cards.</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/combine.webp" alt="A troponin card and a creatine kinase card combined into one card with both slides on the back">
+
+<b>Paying for the AI: your own OpenRouter account</b>
+<ul>
+<li>Make an <a href="https://openrouter.ai">OpenRouter</a> account, add credit and create a key in about three minutes; the add-on shows each step with pictures.</li>
+<li><b>About 2–3 US cents a lecture</b> (US$10 of credit is hundreds of lectures). OpenRouter adds a small fee when you buy credit. Prices are in US dollars.</li>
+<li><b>No surprise bills:</b> leave Auto Top-Up off and you can never spend more than the credit you bought. The steps also give your key a monthly limit.</li>
+<li>Cards are written by Claude Haiku 5.5, which covered the most must-know facts when I blind-tested the models on a lecture, with Gemini 3.6 Flash taking over when it's busy.</li>
+<li><i>OpenRouter credit</i> at the top of the window shows what's left and what this lecture has cost.</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/free.webp" alt="The OpenRouter key steps, and the credit panel">
+
+<b>Also</b>
+<ul>
+<li><b>Question sets:</b> studying from a case, tutorial or list of questions? Choose the questions together with any reading material, and the cards answer the questions from those readings.</li>
+<li><b>Fewer duplicates:</b> cards that closely match ones already in your collection are flagged.</li>
+<li><b>Your style:</b> cards are written in the style of your existing cards on the same note type.</li>
+</ul>
+
+<b>Key caveats</b>
+<ul>
+<li>Next-gen Card Creator only makes <b>cloze</b> cards (note type <i>Next-gen Cloze</i>, created the first time). Image occlusion is not supported.</li>
+<li>Cards are written by AI and can be wrong, so check them; that's what the review screen is for. They are not medical advice.</li>
+<li>Needs Anki 26.9 or newer and an internet connection.</li>
+<li>You must be 18 or older, and you agree to <a href="https://openrouter.ai/terms">OpenRouter's terms</a> when you save your key.</li>
+</ul>
+
+<b>Privacy</b>
+The slide text and pictures, and up to 25 of your existing cards on this note type (as style examples), are sent through OpenRouter using <i>your</i> key, under <a href="https://openrouter.ai/terms">OpenRouter's terms</a>, to a company that runs the AI model. Only upload material you're allowed to share: nothing personal or confidential, and no slides your university says not to share. Nothing is sent to me. Your key and your lectures stay on your computer.
+
+<b>Problems, ideas and support</b>
+Found a bug or have an idea? Report it on <a href="https://github.com/Wormybean/next-gen-card-creator/issues">GitHub</a>. If it saves you time, you can <a href="https://ko-fi.com/nextgenankicreator">buy me a coffee on Ko-fi</a>.
+
+<a href="https://github.com/Wormybean/next-gen-card-creator/issues"><img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/github.webp" alt="Problems or ideas? Tell me on GitHub" width="461"></a> <a href="https://ko-fi.com/nextgenankicreator"><img src="https://raw.githubusercontent.com/Wormybean/next-gen-card-creator/main/docs/listing/kofi.webp" alt="Support development: buy me a coffee on Ko-fi" width="551"></a>
+
+<b>Licence</b>
+Next-gen Card Creator by Wormybean, © 2026. Not made or endorsed by OpenRouter, Anthropic or Google. Free and open source under the <a href="https://github.com/Wormybean/next-gen-card-creator/blob/main/LICENSE">AGPL-3.0</a>, with the additional terms in its <a href="https://github.com/Wormybean/next-gen-card-creator/blob/main/NOTICE">NOTICE</a>: copies keep this credit, and modified versions need their own name.
+
+<i>The screenshots show slides from "Acute Coronary Syndromes" by Kim A. Eagle, M.D., University of Michigan (<a href="https://open.umich.edu/find/open-educational-resources/medical/cardiovascular-m2">Open.Michigan</a>, 2012), licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Only the first 34 slides were used, and they appear here as screenshots of the add-on. The screenshots that show these slides are shared under the same licence.</i>
